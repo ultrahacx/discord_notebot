@@ -20,20 +20,20 @@ This repository is built in such a way to directly deploy the heroku hosting ser
 
 ## How to deploy the bot
 
-* **Step 1: ** Make a new application on Discord and change the token in bot.py 
+* **Step 1:** Make a new application on Discord and change the token in bot.py 
 
-* **Step 1: ** git clone https://github.com/ultrahacx/discord_notebot.git
+* **Step 1:** git clone https://github.com/ultrahacx/discord_notebot.git
 
-* **Step 2: ** Download Heroku CLI [here] (https://devcenter.heroku.com/articles/heroku-cli) and install it.
+* **Step 2:** Download Heroku CLI [here] (https://devcenter.heroku.com/articles/heroku-cli) and install it.
 
-* **Setp 3: ** cd discord_notebot
+* **Setp 3:** cd discord_notebot
 
-* **Setp 4: ** heroku login
+* **Setp 4:** heroku login
 
-* **Setp 5: ** heroku git:clone -a NAME_OF_APP_ON_HEROKU
+* **Setp 5:** heroku git:clone -a NAME_OF_APP_ON_HEROKU
 
-* **Setp 6: ** git add .
+* **Setp 6:** git add .
 
-* **Setp 7: ** git commit -am "First commit | Deployment 1"
+* **Setp 7:** git commit -am "First commit | Deployment 1"
 
-* **Setp 8: ** git push heroku master
+* **Setp 8:** git push heroku master
