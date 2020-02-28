@@ -24,7 +24,7 @@ This repository is built in such a way to directly deploy the heroku hosting ser
 
 * **Step 1:** git clone https://github.com/ultrahacx/discord_notebot.git
 
-* **Step 2:** Download Heroku CLI ! [here] (https://devcenter.heroku.com/articles/heroku-cli) and install it.
+* **Step 2:** Download Heroku CLI (https://devcenter.heroku.com/articles/heroku-cli) and install it.
 
 * **Setp 3:** cd discord_notebot
 
