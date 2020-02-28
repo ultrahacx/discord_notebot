@@ -12,7 +12,7 @@ client.remove_command('help')
 @client.event
 async def on_ready():
     print("Bot is ready!!!")
-
+#Command to show any single note
 @client.command(pass_context=True)
 @commands.has_permissions(administrator=True)
 async def shownote(ctx, args1):
@@ -37,6 +37,7 @@ async def shownote(ctx, args1):
         print("One of either file not found")
         await ctx.send("Notes database is either corrupted or the files are missing")
 
+#Command to show the available saved notes
 @client.command(pass_context=True)
 async def showlist(ctx):
     if path.exists(notename) == True:
@@ -55,7 +56,7 @@ async def showlist(ctx):
        await ctx.send("No notes database found :books:")
 
 
-
+#Command to add a new note
 
 
 @client.command(pass_context=True)
@@ -85,7 +86,7 @@ async def addnote(ctx, args1, *,message):
         print("Added note to the database")
         await ctx.send("Note added successfully :white_check_mark:")
 
-
+#Command to delete any single command
 @client.command(pass_context=True)
 @commands.has_any_role('Admin', 'Moderator', 'Super Admin')
 async def deletenote(ctx, args1):
@@ -144,7 +145,7 @@ async def deletenote(ctx, args1):
             await ctx.send("Unable to deleted note")
 
 
-
+#Command to delete the whole database
 @client.command(pass_context=True)
 @commands.has_any_role('Admin', 'Moderator', 'Super Admin')
 async def deletedb(ctx):
@@ -157,6 +158,7 @@ async def deletedb(ctx):
         print("DB not found...")
         await ctx.send("Database not found :red_circle: :books:")
 
+#Help command
 @client.command(pass_context=True)
 async def help(ctx):
     author = ctx.message.author
@@ -174,4 +176,5 @@ async def help(ctx):
     embed.add_field(name="!deletedb", value="Use this to delete full database (Can only be used by higher authorities)", inline=False)
     await ctx.send(embed=embed)
 
+    #Change the token given in '' with your own personal token...
 client.run('NjgyNjQxMzM3MjUzNjI2MDAw.Xlf9Ww.jjzvchkYbstWHXkN3lH8Fc6OiR8')
